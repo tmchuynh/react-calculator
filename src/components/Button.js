@@ -29,12 +29,35 @@ const Button = ({value}) => {
         }
     }
 
+    const handleClickButton = () => {
+        const numberString = value.toString()
+
+        let numberValue;
+
+        if(numberString === '0' && calc.num === 0) {
+            numberValue = "0";
+        }
+        else {
+            numberValue = Number(calc.num + numberString);
+        }
+
+        setCalc( {
+            ...calc,
+            num: numberValue
+        })
+    }
+
     const handleBtnClick = () => {
         const results = {
         '.': commaClick,
         "C" :resetClick
         }
-        return results[value]()
+        if (results[value]) {
+            return results[value]()
+        }
+        else {
+            return handleClickButton()
+        }
 
     }
   return (
