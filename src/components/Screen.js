@@ -3,3 +3,5 @@ const Screen = () => {
         <div className="screen">156868</div>
     )
 }
+
+export default Screen
