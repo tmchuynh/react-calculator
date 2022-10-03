@@ -43,6 +43,15 @@ body {
     border: 2px dotted #242424;
 }
 
+.equals {
+    background: #4bd086;
+    grid-column: 3/5;
+}
+
+.opt {
+    background: red;
+}
+
 .wrapper {
     background: #f6f8f9;
     width: 20rem;
