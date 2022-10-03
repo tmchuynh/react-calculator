@@ -31,8 +31,8 @@ const Button = ({value}) => {
 
     const handleBtnClick = () => {
         const results = {
-        '.': commaClick
-        "C":resetClick
+        '.': commaClick,
+        "C" :resetClick
         }
         return results[value]()
 
