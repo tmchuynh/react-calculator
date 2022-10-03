@@ -39,6 +39,10 @@ body {
     font-size: 1.5rem;
 }
 
+.button:hover {
+    border: 2px dotted #242424;
+}
+
 .wrapper {
     background: #f6f8f9;
     width: 20rem;
